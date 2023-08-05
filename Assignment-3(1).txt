@@ -1,13 +1,10 @@
 #Write a Python function to sum all the numbers in a list.
+#function to add elements in list
 def add(num):
     result = 0
     for x in num:
         result += x
     return result
-lst = []
-# number of elements as input
-n = int(input("Enter number of elements : "))
-for i in range(0, n):
-    ele = int(input())
-    lst.append(ele) 
-print("Sum of elements in list:",add(lst))
+# input elements
+n = list(map(int,input("Enter values by seperating space between values : ").split()))
+print("Sum of elements in list : ",add(n))
